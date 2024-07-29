@@ -1,11 +1,14 @@
-﻿public class Dog
-{
-    public int age;
-    public string name;
+﻿using UnityEngine;
 
-    public Dog(int age,string name)
+public class Dog : Animal
+{   
+    public Color furColor;
+    public Dog(int age, string name, float weight) : base(age, name, weight)
     {
-        this.age = age;
-        this.name = name;
+    }
+
+    public override void Voice()
+    {
+        Debug.Log("woof");
     }
 }

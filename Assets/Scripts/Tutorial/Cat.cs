@@ -1,13 +1,17 @@
-﻿public class Cat
-{
-    public int age;
-    public string name;
-    public Cat mother;
-    public Dog enemy;
+﻿using UnityEngine;
 
-    public Cat(int age,string name)
+public class Cat: Animal
+{
+    public Cat mother;
+    public Animal enemy;
+
+    public Cat(int age, string name, float weight) : base(age, name, weight)
     {
-        this.age = age;
-        this.name = name;
     }
+
+    public override void Voice()
+    {
+        Debug.Log("Meow");
+    }
+    
 }

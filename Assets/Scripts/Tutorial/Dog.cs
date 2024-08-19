@@ -11,4 +11,8 @@ public class Dog : Animal
     {
         Debug.Log("woof");
     }
+    public override void MethodTest()
+    {
+        Debug.Log("woof");
+    }
 }

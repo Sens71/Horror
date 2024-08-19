@@ -9,9 +9,10 @@ public class Mouse:Animal
     {
 
     }
-
+    
     public override void Voice()
     {
         Debug.Log("squeak");
     }
+    
 }
